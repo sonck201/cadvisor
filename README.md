@@ -23,7 +23,8 @@ This package compile official [gcr.io/cadvisor/cadvisor](https://github.com/goog
 
 **NOTE:** Tag corresponds to the version of cAdvisor
 
-- `v0.40.0`, `latest` - [(Dockerfile)](https://github.com/sonck201/cadvisor/blob/main/Dockerfile)
+- `v0.40.0` - [(Dockerfile)](https://github.com/sonck201/cadvisor/blob/a6d644b87e7e2173c9aad47b7f5a102551972713/README.md)
+- `v0.38.6`, `latest` - [(Dockerfile)](https://github.com/sonck201/cadvisor/blob/a6d644b87e7e2173c9aad47b7f5a102551972713/README.md)
 
 The best (and recommended) way how to use this package is as [Docker image](https://hub.docker.com/r/sonck201/cadvisor/).
 
@@ -80,3 +81,7 @@ docker run \
 ```
 
 **IMPORTANT NOTE: Build must be only on ARM device. On x86/x64 CPU not work!**
+
+## References
+
+- https://console.cloud.google.com/gcr/images/cadvisor/GLOBAL/cadvisor

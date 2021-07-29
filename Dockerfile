@@ -3,11 +3,11 @@ FROM arm32v7/golang as builder
 
 LABEL Iamck <thanhson_it201@yahoo.com> (https://sonck201.github.io)
 
-ENV CADVISOR_VERSION "v0.40.0"
+ENV CADVISOR_VERSION "v0.38.6"
 
 RUN apt-get update && apt-get install -y git dmsetup && apt-get clean
 
-RUN git clone --branch ${CADVISOR_VERSION} https://github.com/google/cadvisor.git /go/src/github.com/google/cadvisor
+RUN git clone -b ${CADVISOR_VERSION} https://github.com/google/cadvisor.git /go/src/github.com/google/cadvisor
 
 WORKDIR /go/src/github.com/google/cadvisor
 
